@@ -1,23 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import { Redirect, Route, Switch } from "react-router";
+import { NavLink } from "react-router-dom";
+import About from "./About/About"
+import Contacts from "./Contacts/Contacts";
+import Home from "./Home/Home";
+import NotFound from "./NotFound/NotFound";
+import "./App.css"
+
 
 function App() {
+  const activeLinkStyle = {
+    fontWeight: 'bold'
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ul>
+        <li><NavLink activeStyle={activeLinkStyle}
+        activeClassName="activeLink" 
+        to="/"
+        exact>Home</NavLink>
+        </li>
+        <li>
+          <NavLink
+          activeStyle={activeLinkStyle}
+          activeClassName="activeLink" 
+           to="/">Contacts</NavLink>
+           </li>
+        <li><NavLink
+        activeStyle={activeLinkStyle}
+        activeClassName="activeLink" 
+         to="/">About</NavLink></li>
+      </ul>
+      <Switch>
+      <Route  path="/about" component={About}/>
+      <Route  path="/contacts" component={Contacts}/>
+      <Route   exact path="/" component={Home}/>
+      <Route  path="/" component={NotFound}/>
+      {/*Главный страницага аллып келет <Redirect to="/" /> */}
+      </Switch>
+      
+     {/* <About /> */}
     </div>
   );
 }
