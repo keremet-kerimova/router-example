@@ -8,6 +8,7 @@ import "./App.css"
 import Posts from "./Posts/Posts";
 import Saide from "./Saide/Saide";
 import PostFull from "./Posts/PostFull/PostFull";
+import PostList from "./Posts/PostList/PostList";
 
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
       <Route  path="/about" component={About}/>
       <Route  path="/contacts" component={Contacts}/>
       <Route  path="/posts" component={Posts}/>
+      <Route  path="/postfull" component={PostList}/>
       <Route  path="/saide" component={Saide}/>
       <Route   exact path="/" component={Home}/>
       <Route  path="/" component={NotFound}/>
