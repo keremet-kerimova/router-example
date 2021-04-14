@@ -1,4 +1,4 @@
-import { Redirect, Route, Switch } from "react-router";
+import { Route, Switch } from "react-router";
 import { NavLink } from "react-router-dom";
 import About from "./About/About"
 import Contacts from "./Contacts/Contacts";
@@ -7,6 +7,7 @@ import NotFound from "./NotFound/NotFound";
 import "./App.css"
 import Posts from "./Posts/Posts";
 import PostFull from "./Posts/PostFull/PostFull"
+import Saide from "./Saide/Saide";
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
 
   return (
     <div className="App">
-      <ul>
+      <ul className="ul">
         <li><NavLink activeStyle={activeLinkStyle}
         activeClassName="activeLink" 
         to="/"
@@ -36,16 +37,18 @@ function App() {
         activeStyle={activeLinkStyle}
         activeClassName="activeLink" 
          to="/posts">Posts</NavLink></li>
+          <li><NavLink activeClassName="activeLink" activeStyle = {activeLinkStyle} to="/saide"> News</NavLink></li>
       </ul>
       <Switch>
       <Route  path="/about" component={About}/>
       <Route  path="/contacts" component={Contacts}/>
       <Route  path="/posts" component={Posts}/>
+      <Route  path="/saide" component={Saide}/>
       <Route   exact path="/" component={Home}/>
       <Route  path="/" component={NotFound}/>
       {/*Главный страницага аллып келет <Redirect to="/" /> */}
-      </Switch>
-      
+      </Switch >
+      {/* Перервключает */}
      {/* <About /> */}
     </div>
   );
