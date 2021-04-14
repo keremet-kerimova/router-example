@@ -6,7 +6,6 @@ import Home from "./Home/Home";
 import NotFound from "./NotFound/NotFound";
 import "./App.css"
 import Posts from "./Posts/Posts";
-import PostFull from "./Posts/PostFull/PostFull"
 import Saide from "./Saide/Saide";
 
 
@@ -27,12 +26,12 @@ function App() {
           <NavLink
           activeStyle={activeLinkStyle}
           activeClassName="activeLink" 
-           to="/">Contacts</NavLink>
+           to="/contacts">Contacts</NavLink>
            </li>
         <li><NavLink
         activeStyle={activeLinkStyle}
         activeClassName="activeLink" 
-         to="/">About</NavLink></li>
+         to="/about">About</NavLink></li>
          <li><NavLink
         activeStyle={activeLinkStyle}
         activeClassName="activeLink" 

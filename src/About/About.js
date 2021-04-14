@@ -19,7 +19,7 @@ import classes from "./About.module.css";
             sollicitudin. Class aptent taciti sociosqu ad litora torquent per
             conubia nostra, per inceptos himenaeos.
           </p>
-          <p className={classes.par}>
+          <p className={classes.paragraf}>
             Mauris a velit elementum, consequat dolor sit amet, vestibulum lorem.
             Aenean ullamcorper eleifend ipsum, eu finibus orci. Donec magna sem,
             ultricies vel imperdiet id, sagittis eu neque. Cras ullamcorper quam
