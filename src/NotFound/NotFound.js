@@ -1,6 +1,6 @@
 const NotFound = () => {
     return(
-        <div>This  is not found page </div>
+        <div className={classes.NotFound}> Page NotFound</div>
     )
 }
 export default NotFound;
