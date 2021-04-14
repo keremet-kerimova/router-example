@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-const PostFull = ({match}) => {
+const PostFull = () => {
     return(
      <article>
          <Link to="/posts">Back to posts</Link>
