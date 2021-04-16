@@ -1,0 +1,36 @@
+  
+.PostList {
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+.PostList li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border: 2px solid yellow;
+    border-radius: 15px;
+    flex-wrap: wrap;
+    box-shadow: 0 0 10px greenyellow;
+    list-style-type: none;
+}
+.PostList li a {
+    text-decoration: none;
+}
+/* }
+.PostList li jpg1 {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  
+} */
+.PostList li:hover {
+    background-color:honeydew;
+    box-shadow: 0 0 5px thistle;
+}
+.PostList li a:hover {
+    color: black;
+    text-shadow: 0 0 4px black;
+}
