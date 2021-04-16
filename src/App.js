@@ -6,7 +6,7 @@ import Home from "./Home/Home";
 import NotFound from "./NotFound/NotFound";
 import "./App.css"
 import Posts from "./Posts/Posts";
-import Saide from "./Saide/Saide";
+import Saide from "./Saide/Saide"
 import PostList from "./Posts/PostList/PostList";
 
 
